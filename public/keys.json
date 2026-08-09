@@ -1,7 +1,7 @@
 {
-  "valid_keys": ["AMARYT", "AAMM"],
+  "valid_keys": ["AMARYT"],
   "details": [
     {"code": "AMARYT", "type": "lifetime", "days": 3650},
-    {"code": "AAMM", "type": "monthly", "days": 30}
+    
   ]
 }
