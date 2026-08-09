@@ -1,6 +1,6 @@
 // تخزين مؤقت في الذاكرة (يدعم ربط Upstash Redis اختياريًا)
 let memoryKeys = [
-  { code: "AMARYT", type: "lifetime", days: 3650, created: Date.now() },
+  { code: "AMARYT", type: "lifetime", days: 3, created: Date.now() },
   { code: "AAMW", type: "monthly", days: 30, created: Date.now() }
 ];
 
