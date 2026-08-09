@@ -1,7 +1,7 @@
 {
   "valid_keys": ["AMARYT"],
   "details": [
-    {"code": "AMARYT", "type": "lifetime", "days": 3},
+    {"code": "AMARYT", "type": "lifetime", "days": 50},
     
   ]
 }
