@@ -1,0 +1,4 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__.'/db.php'; require_once __DIR__.'/functions.php'; requestMethod('POST');
+try { ensureDatabase(); $d=getJsonBody(); $l=trim((string)($d['username']??$d['email']??'')); $p=(string)($d['password']??''); if($l===''||$p==='') jsonResponse(['status'=>'error','message'=>'Username/email and password are required'],422); $s=db()->prepare('SELECT id,username,email,password_hash,created_at FROM users WHERE username=? OR email=? LIMIT 1'); $s->execute([$l,$l]); $u=$s->fetch(); if(!$u||!password_verify($p,$u['password_hash'])) jsonResponse(['status'=>'error','message'=>'Invalid username/email or password'],401); jsonResponse(['status'=>'ok','message'=>'Login successful','user'=>['id'=>(int)$u['id'],'username'=>$u['username'],'email'=>$u['email'],'created_at'=>$u['created_at']],'token'=>issueToken((int)$u['id'])]); } catch(Throwable $x) { jsonResponse(['status'=>'error','message'=>'Server error'],500); }
