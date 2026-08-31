@@ -36,9 +36,12 @@ function bearerToken(): ?string {
         return trim($m[1]);
     }
 
-    // Fallback for hosts that strip the Authorization header.
     $fallback = $_SERVER['HTTP_X_AUTH_TOKEN'] ?? $_SERVER['HTTP_X_ACCESS_TOKEN'] ?? '';
-    return $fallback !== '' ? trim($fallback) : null;
+    if ($fallback !== '') return trim($fallback);
+
+    // Temporary compatibility fallback for testing on hosts that strip auth headers.
+    $queryToken = $_GET['token'] ?? '';
+    return is_string($queryToken) && $queryToken !== '' ? trim($queryToken) : null;
 }
 
 function issueToken(int $userId): string {
