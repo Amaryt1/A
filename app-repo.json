@@ -1,19 +1,17 @@
 {
   "name": "Amaryt1 Feather Repository",
   "identifier": "com.amaryt1.feather-repo",
+  "iconURL": "https://github.com/claration/Feather/blob/main/iOS/Resources/Icons/Main/Mac@3x.png?raw=true",
   "website": "https://github.com/Amaryt1/A",
   "apps": [
     {
       "name": "Feather",
       "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "Amaryt1",
+      "iconURL": "https://github.com/claration/Feather/blob/main/iOS/Resources/Icons/Main/Mac@3x.png?raw=true",
       "localizedDescription": "Modified Feather with custom features.",
       "subtitle": "Modified Feather",
       "tintColor": "848ef9",
-      "version": "1.0.0",
-      "versionDate": "2026-09-09T11:00:00Z",
-      "size": 14145280,
-      "downloadURL": "https://github.com/Amaryt1/A/releases/download/v1.0.0/Feather.ipa",
       "versions": [
         {
           "version": "1.0.0",
@@ -21,7 +19,12 @@
           "size": 14145280,
           "downloadURL": "https://github.com/Amaryt1/A/releases/download/v1.0.0/Feather.ipa"
         }
-      ]
+      ],
+      "appPermissions": {},
+      "version": "1.0.0",
+      "versionDate": "2026-09-09T11:00:00Z",
+      "size": 14145280,
+      "downloadURL": "https://github.com/Amaryt1/A/releases/download/v1.0.0/Feather.ipa"
     }
   ]
 }
