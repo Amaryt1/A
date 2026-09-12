@@ -15,16 +15,24 @@
       "versions": [
         {
           "version": "2.9.3",
-          "date": "2026-09-10T06:00:00Z",
-          "size": 14191495,
+          "date": "2026-09-13T00:00:00Z",
+          "size": 14680064,
+          "downloadURL": "https://github.com/Amaryt1/A/releases/download/2.9.3/Feather.ipa",
+          "sha256": "d8ce9afad8ad16048daa43531fd7fc367f504870346ba804c80e9be02b619157"
+        },
+        {
+          "version": "2.9.2",
+          "date": "2026-09-09T11:10:20Z",
+          "size": 1419495,
           "downloadURL": "https://github.com/Amaryt1/A/releases/download/v2.9.2/Feather.ipa"
         }
       ],
       "appPermissions": {},
       "version": "2.9.3",
-      "versionDate": "2026-09-10T06:00:00Z",
-      "size": 14191495,
-      "downloadURL": "https://github.com/Amaryt1/A/releases/download/v2.9.2/Feather.ipa"
+      "versionDate": "2026-09-13T00:00:00Z",
+      "size": 14680064,
+      "downloadURL": "https://github.com/Amaryt1/A/releases/download/2.9.3/Feather.ipa",
+      "sha256": "d8ce9afad8ad16048daa43531fd7fc367f504870346ba804c80e9be02b619157"
     }
   ]
 }
